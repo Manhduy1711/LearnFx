@@ -1,1 +1,1 @@
-# LearnFx
+# Japanese Dictionary By JavaFX
