@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="463.0" prefWidth="613.0" style="-fx-background-color: #CDC2AE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TranslateController">
+   <children>
+      <Label fx:id="label1" layoutX="31.0" layoutY="23.0" prefHeight="46.0" prefWidth="551.0" style="-fx-background-color: #C2DED1;" text="日本語">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textField1" layoutX="31.0" layoutY="69.0" prefHeight="118.0" prefWidth="551.0">
+         <font>
+            <Font size="24.0" />
+         </font></TextArea>
+      <Label fx:id="label2" layoutX="31.0" layoutY="266.0" prefHeight="46.0" prefWidth="551.0" style="-fx-background-color: #C2DED1;" text="ベトナム語">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textField2" layoutX="31.0" layoutY="312.0" prefHeight="118.0" prefWidth="551.0">
+         <font>
+            <Font size="24.0" />
+         </font></TextArea>
+      <Button alignment="CENTER" layoutX="185.0" layoutY="204.0" mnemonicParsing="false" onAction="#actionConvert" prefHeight="48.0" prefWidth="59.0" styleClass="button-double-arrow">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/double-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="textConvert1" layoutX="31.0" layoutY="204.0" prefHeight="48.0" prefWidth="154.0" style="-fx-background-color: white;" text="日本語">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="textConvert2" layoutX="244.0" layoutY="204.0" prefHeight="48.0" prefWidth="154.0" style="-fx-background-color: white;" text="ベトナム語">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="435.0" layoutY="199.0" mnemonicParsing="false" onAction="#actionTranslate" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: #354259;" styleClass="button-double-arrow" text="翻訳" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/translate-submit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="translateVoiceBtn" layoutX="522.0" layoutY="266.0" mnemonicParsing="false" onAction="#actionVoiceTranslate" prefHeight="46.0" prefWidth="59.0" visible="false">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/9004796_speaker_sound_music_audio_volume_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

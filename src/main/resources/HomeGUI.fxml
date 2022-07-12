@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="710.0" style="-fx-background-color: #ECE5C7;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <AnchorPane fx:id="container" layoutX="86.0" layoutY="61.0" prefHeight="463.0" prefWidth="613.0" />
+      <AnchorPane layoutY="61.0" prefHeight="463.0" prefWidth="78.0" style="-fx-background-color: #CDC2AE;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Button contentDisplay="TOP" layoutX="8.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionHomeSearchBtn" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #354259; -fx-background-radius: 10px;" text="検索" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="8.0" layoutY="81.0" mnemonicParsing="false" onAction="#actionHomeAddBtn" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #354259; -fx-background-radius: 10px;" text="追加" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="8.0" layoutY="153.0" mnemonicParsing="false" onAction="#actionHomeShowBtn" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #354259; -fx-background-radius: 10px;" text="リスト" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/list.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="8.0" layoutY="224.0" mnemonicParsing="false" onAction="#actionHomeHistoryBtn" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #354259; -fx-background-radius: 10px;" text="履歴" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/history.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="8.0" layoutY="295.0" mnemonicParsing="false" onAction="#actionHomeTranslateBtn" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #354259; -fx-background-radius: 10px;" text="翻訳" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/google_translate_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="36.0" prefWidth="710.0" style="-fx-background-color: #C2DED1;">
+         <children>
+            <ToggleButton fx:id="buttonHina" cache="true" ellipsisString="" graphicTextGap="10.0" layoutX="22.0" mnemonicParsing="false" onAction="#voiceHina" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #C2DED1; -fx-font-size: 24; -fx-text-fill: black;" text="HINA">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="imageHina" fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/6104754.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="buttonAiri" cache="true" ellipsisString="" graphicTextGap="10.0" layoutX="194.0" mnemonicParsing="false" onAction="#voiceAiri" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #C2DED1; -fx-font-size: 24; -fx-text-fill: black;" text="AIRI">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="imageAiri" fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/6104747.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="buttonFumi" cache="true" ellipsisString="" graphicTextGap="10.0" layoutX="366.0" mnemonicParsing="false" onAction="#voiceFumi" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #C2DED1; -fx-font-size: 24; -fx-text-fill: black;" text="FUMI">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="imageFumi" fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/6104758.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </ToggleButton>
+         </children></AnchorPane>
+      <ToggleButton fx:id="buttonAkira" cache="true" ellipsisString="" graphicTextGap="10.0" layoutX="538.0" mnemonicParsing="false" onAction="#voiceAkira" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #C2DED1; -fx-font-size: 24; -fx-text-fill: black;" text="AKIRA">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fx:id="imageAkira" fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/6104776.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </ToggleButton>
+   </children>
+</AnchorPane>
